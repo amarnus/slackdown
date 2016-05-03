@@ -4,16 +4,43 @@ namespace Text;
 
 class Slackdown {
 
-  private static function getDefaults() {
+  public static function getFilters() {
     return array(
-      'bold' => TRUE,
-      'italics' => TRUE,
-      'strike' => TRUE,
-      'fmt_multiline' => TRUE,
-      'fmt_inline' => TRUE,
-      'blockquote_multiline' => TRUE,
-      'blockquote' => TRUE
+      'bold' => array(
+        'label' => 'Bold',
+        'help' => 'Emphasizes text wrapped with a single asterisk'
+      ),
+      'italics' => array(
+        'label' => 'Italics',
+        'help' => 'Emphasizes text wrapped with a single underscore'
+      ),
+      'strike' => array(
+        'label' => 'Strikethrough',
+        'help' => 'Strikes out text wrapped with a single tilde'
+      ),
+      'fmt_multiline' => array(
+        'label' => 'Pre-formatted (Multiline)',
+        'help' => 'Renders pre-formatted text composed of multiple lines'
+      ),
+      'fmt_inline' => array(
+        'label' => 'Pre-formatted (Inline)',
+        'help' => 'Renders pre-formatted text inline'
+      ),
+      'blockquote_multiline' => array(
+        'label' => 'Blockquote (Multiline)',
+        'help' => 'Renders a quote composed of multiple lines'
+      ),
+      'blockquote' => array(
+        'label' => 'Blockquote',
+        'help' => 'Renders a quote composed of a single line'
+      )
     );
+  }
+
+  private static function getDefaults() {
+    $keys = array_keys(self::getFilters());
+    $values = array_fill(0, count($keys), TRUE);
+    return array_combine($keys, $values);
   }
 
   public function __construct(array $options = array()) {

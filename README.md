@@ -9,6 +9,7 @@ Translates text written in Slack-style markdown to HTML.
 ## Usage
 
 ```php
+<?php
 use \Text\Slackdown as Slackdown;
 
 $subject = '>>>*Today is a good day...*\n\n>Yes, it is\n-_God_';
