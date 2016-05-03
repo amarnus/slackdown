@@ -1,7 +1,5 @@
 # Slackdown
 
-## Synopsis
-
 Translates text written in Slack-style markdown to HTML.
 
 ---
