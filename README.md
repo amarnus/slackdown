@@ -1,7 +1,5 @@
 # Slackdown
 
-## Synopsis
-
 Translates text written in Slack-style markdown to HTML.
 
 ---
@@ -11,10 +9,8 @@ Translates text written in Slack-style markdown to HTML.
 ```php
 <?php
 use \Text\Slackdown as Slackdown;
-
-$subject = '>>>*Today is a good day...*\n\n>Yes, it is\n-_God_';
 $slackDown = new Slackdown();
-echo $slackDown->process($subject);
+echo $slackDown->process('>>>*Today is a good day...*\n\n>Yes, it is\n-_God_');
 ```
 
 ---
