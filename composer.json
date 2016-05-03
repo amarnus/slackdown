@@ -1,0 +1,10 @@
+{
+    "name": "amarnus/text-slackdown",
+    "description": "Translates text written in Slack-style markdown to HTML.",
+    "authors": [
+        {
+            "name": "Amarnath Ravikumar",
+            "email": "amarnus@gmail.com"
+        }
+    ]
+}
