@@ -6,34 +6,13 @@ class Slackdown {
 
   public static function getFilters() {
     return array(
-      'bold' => array(
-        'label' => 'Bold',
-        'help' => 'Emphasizes text wrapped with a single asterisk'
-      ),
-      'italics' => array(
-        'label' => 'Italics',
-        'help' => 'Emphasizes text wrapped with a single underscore'
-      ),
-      'strike' => array(
-        'label' => 'Strikethrough',
-        'help' => 'Strikes out text wrapped with a single tilde'
-      ),
-      'fmt_multiline' => array(
-        'label' => 'Pre-formatted (Multiline)',
-        'help' => 'Renders pre-formatted text composed of multiple lines'
-      ),
-      'fmt_inline' => array(
-        'label' => 'Pre-formatted (Inline)',
-        'help' => 'Renders pre-formatted text inline'
-      ),
-      'blockquote_multiline' => array(
-        'label' => 'Blockquote (Multiline)',
-        'help' => 'Renders a quote composed of multiple lines'
-      ),
-      'blockquote' => array(
-        'label' => 'Blockquote',
-        'help' => 'Renders a quote composed of a single line'
-      )
+      'italics' => 'Emphasis',
+      'bold' => 'Strong Emphasis',
+      'strike' => 'Strikethrough',
+      'fmt_multiline' => 'Formatted Text - Multiple Lines',
+      'fmt_inline' =>'Formatted Text - Inline',
+      'blockquote_multiline' => 'Quote - Multiple Lines',
+      'blockquote' => 'Quote'
     );
   }
 
